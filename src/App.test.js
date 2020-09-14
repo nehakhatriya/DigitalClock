@@ -12,20 +12,11 @@ it('renders correctly', () => {
 
 it('should display current time',()=>{
   let date=new Date();
-  const min=date.getMinutes()<10?'0'+date.getMinutes():date.getMinutes()
-  const hour=date.getHours()
-  const sec=date.getSeconds()<10?'0'+date.getSeconds():date.getSeconds()
-  expect(app.find('#time').text()).toEqual(`${hour}:${min}:${sec}`)
+  expect(app.find('#time').text()).toEqual(`${date.toLocaleTimeString()}`)
 })
 
 it('should display date when toggle button is clicked',()=>{
-  let datee=new Date();
-  const days=['mon','tue','wed','thur','fri','sat','sun']
-  const day=days[datee.getDay()]
-  const today=datee.getDate()
-  const months=['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec']
-  const month=months[datee.getMonth()]
-  const year=datee.getFullYear()
+  let date=new Date();
   app.find("#togglebtn").simulate('click')
-  expect(app.find('#date').text()).toEqual(`${day} ${today} ${month} ${year}`)
+  expect(app.find('#date').text()).toEqual(`${date.toLocaleDateString()}`)
 })

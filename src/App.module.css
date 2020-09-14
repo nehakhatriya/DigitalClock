@@ -1,41 +1,24 @@
 .clock
 {
-  background-color:black;
-  width: 600px;
-  margin:auto;
-  margin-top: 20px;
-  text-align:center;
-  color:white;
-}
-
-.clockheader{ 
-    text-align: center;
-}
-.ClockDiv{
-   
-padding: 20px;
+    border-radius: 50%;
+  margin-right: 20px;
+  font-size: 20px;
+  width: 220px;
+  height:220px;
+  padding: 70px 0;
+  color: #ccc;
+  text-height:211;
+  text-align: center;
+  font-family:'digital-clock-font';;
+  background:black
 
 }
-.roundclock{
-  width :125px;
-  height:125px;
-  border:1px solid black;
-  margin:auto;
-  border-radius:50%;
-  background:#282C34;
-  text-align:center
-}
-h5{
- color:#61DAFB;
- padding:15px;
-}
-.togglediv{
-    align-items: center;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.hide{
-    display: none;
-    margin-top: 3px;
-}
+.circle span {
+    color: red;
+    font-size: 22px;
+    display: block
+  }
+  .clockheader{
+      text-align: center;
+  }
+
