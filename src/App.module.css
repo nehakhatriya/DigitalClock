@@ -2,13 +2,15 @@
 {
     border-radius: 50%;
   margin-right: 20px;
+  margin-top: 20px;
   font-size: 20px;
-  width: 220px;
-  height:220px;
+  width: 200px;
+  height:200px;
   padding: 70px 0;
-  color: #ccc;
+  color:lightblue;
   text-height:211;
   text-align: center;
+  text-decoration:bold;
   font-family:'digital-clock-font';;
   background:black
 
@@ -21,4 +23,9 @@
   .clockheader{
       text-align: center;
   }
+  .center{
+    display: flex;
+   justify-content: center;
+ }
 
+ 
