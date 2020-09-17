@@ -1,0 +1,32 @@
+.clock
+{
+    border-radius: 50%;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  width: 200px;
+  height:200px;
+  padding: 70px 0;
+  color:lightblue;
+  text-height:211;
+  text-align: center;
+  text-decoration:bold;
+  font-family:'digital-clock-font';;
+  background:black
+
+}
+.circle span {
+    font-size: 22px;
+    display: block
+  }
+  .clockheader{
+      text-align: center;
+  }
+  .center{
+    display: flex;
+   justify-content: center;
+ }
+
+ .CLOCK{
+   align-self: center;
+ }
